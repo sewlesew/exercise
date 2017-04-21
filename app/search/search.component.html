@@ -1,0 +1,12 @@
+
+
+<h1>{{title}}</h1>
+Post:<div *ngFor="let d of result">{{d}}</div>
+
+ <form [formGroup]="myform" (ngSubmit)="submit()">
+  
+    <input type="text" formControlName="search"> <button type="submit" >Search</button>
+     
+</form>
+
+
